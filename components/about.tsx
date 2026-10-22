@@ -31,11 +31,11 @@ export function About() {
         <Reveal>
           <SectionHeading id="about-heading" eyebrow="About" title="Education" />
         </Reveal>
-        <ul className="grid gap-5 md:grid-cols-2">
+        <ul className="grid w-full grid-cols-1 items-stretch gap-5 md:grid-cols-2">
           {education.map((item, i) => (
-            <li key={item.degree}>
-              <Reveal delay={i * 120} className="h-full">
-                <article className="group flex h-full flex-col gap-4 rounded-2xl border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 sm:p-8">
+            <li key={item.degree} className="flex min-w-0">
+              <Reveal delay={i * 120} className="flex w-full">
+                <article className="group flex w-full flex-col gap-4 rounded-2xl border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 sm:p-8">
                   <div className="flex items-start justify-between gap-4">
                     <span className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:brand-gradient group-hover:text-white">
                       <GraduationCap className="size-5" aria-hidden="true" />
