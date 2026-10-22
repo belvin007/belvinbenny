@@ -1,9 +1,22 @@
-import { CallingCard } from '@/components/calling-card'
+import { About } from '@/components/about'
+import { Certifications } from '@/components/certifications'
+import { Contact, SiteFooter } from '@/components/contact'
+import { Experience } from '@/components/experience'
+import { Hero } from '@/components/hero'
+import { SiteNav } from '@/components/site-nav'
 
 export default function Page() {
   return (
-    <main className="flex min-h-svh items-center justify-center bg-muted/40 px-4 py-12">
-      <CallingCard />
-    </main>
+    <>
+      <SiteNav />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Certifications />
+        <Contact />
+      </main>
+      <SiteFooter />
+    </>
   )
 }
