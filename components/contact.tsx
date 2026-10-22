@@ -20,7 +20,7 @@ export function Contact() {
         <div className="relative isolate overflow-hidden rounded-3xl border border-primary/30 bg-primary/10 px-6 py-14 text-center sm:px-12 sm:py-20">
           <div
             aria-hidden="true"
-            className="hero-glow pointer-events-none absolute left-1/2 top-1/3 -z-10 aspect-square w-[40rem] rounded-full bg-[radial-gradient(circle_at_center,var(--color-primary)_0%,transparent_65%)] opacity-40 blur-3xl"
+            className="hero-glow brand-glow pointer-events-none absolute left-1/2 top-1/3 -z-10 aspect-square w-[40rem] rounded-full opacity-40 blur-3xl"
           />
           <p className="text-xs font-semibold uppercase tracking-widest text-primary">
             Contact
@@ -33,7 +33,7 @@ export function Contact() {
           </h2>
           <a
             href={`mailto:${profile.email}`}
-            className="mt-8 inline-flex max-w-full items-center gap-2 break-all rounded-lg bg-primary px-6 py-3 font-medium text-primary-foreground shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5 hover:shadow-primary/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+            className="mt-8 inline-flex max-w-full items-center gap-2 break-all rounded-lg brand-gradient px-6 py-3 font-medium text-white shadow-lg shadow-primary/20 transition-all hover:-translate-y-0.5 hover:shadow-primary/40 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
           >
             <Mail className="size-4 shrink-0" aria-hidden="true" />
             {profile.email}
@@ -78,7 +78,7 @@ export function SiteFooter() {
                   href={s.href}
                   {...(s.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
                   aria-label={s.label}
-                  className="flex size-10 items-center justify-center rounded-full border text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-primary hover:bg-primary hover:text-primary-foreground"
+                  className="flex size-10 items-center justify-center rounded-full border text-muted-foreground transition-all hover:-translate-y-0.5 hover:border-transparent hover:brand-gradient hover:text-white"
                 >
                   <Icon className="size-4" aria-hidden="true" />
                 </a>

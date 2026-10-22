@@ -37,7 +37,7 @@ export function About() {
               <Reveal delay={i * 120} className="h-full">
                 <article className="group flex h-full flex-col gap-4 rounded-2xl border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10 sm:p-8">
                   <div className="flex items-start justify-between gap-4">
-                    <span className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
+                    <span className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:brand-gradient group-hover:text-white">
                       <GraduationCap className="size-5" aria-hidden="true" />
                     </span>
                     <span className="rounded-full border border-primary/30 px-3 py-1 text-xs font-medium text-primary">
@@ -52,7 +52,7 @@ export function About() {
                     <ul className="flex flex-col gap-1.5 text-sm text-muted-foreground">
                       {item.details.map((d) => (
                         <li key={d} className="flex items-center gap-2">
-                          <span className="size-1.5 rounded-full bg-primary" aria-hidden="true" />
+                          <span className="size-1.5 rounded-full brand-gradient" aria-hidden="true" />
                           {d}
                         </li>
                       ))}

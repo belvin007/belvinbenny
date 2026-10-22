@@ -30,7 +30,7 @@ export function Certifications() {
               <li key={cert.issuer}>
                 <Reveal delay={i * 120} className="h-full">
                   <article className="group flex h-full flex-col items-center gap-4 rounded-2xl border bg-card p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10">
-                    <span className="flex size-16 items-center justify-center rounded-full border-2 border-primary/30 bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:border-primary group-hover:bg-primary group-hover:text-primary-foreground">
+                    <span className="flex size-16 items-center justify-center rounded-full border-2 border-primary/30 bg-primary/10 text-primary transition-all duration-300 group-hover:scale-110 group-hover:border-transparent group-hover:brand-gradient group-hover:text-white">
                       <Icon className="size-7" aria-hidden="true" />
                     </span>
                     <div className="flex flex-col gap-1">

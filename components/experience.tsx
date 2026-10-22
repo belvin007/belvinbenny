@@ -41,7 +41,7 @@ export function Experience() {
             <li key={role.title} className="relative">
               <span
                 aria-hidden="true"
-                className="absolute -left-[calc(2rem+7px)] top-7 flex size-3 items-center justify-center rounded-full bg-primary ring-4 ring-primary/20 sm:-left-[calc(2.5rem+7px)]"
+                className="absolute -left-[calc(2rem+7px)] top-7 flex size-3 items-center justify-center rounded-full brand-gradient ring-4 ring-primary/20 sm:-left-[calc(2.5rem+7px)]"
               />
               <Reveal delay={i * 120}>
                 <article className="rounded-2xl border bg-card p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-xl hover:shadow-primary/10">
